@@ -21,9 +21,11 @@ export default async function RootLayout({ children }) {
         disableTransitionOnChange
         header={Header}
       >
-          <Header ThemeButton={ThemeButton} />
-          {children}
-          <Footer />
+          <div className="hidden">
+            <Header ThemeButton={ThemeButton} />
+            {children}
+            <Footer />
+          </div>
       </ThemeProvider>
 
       </body>
